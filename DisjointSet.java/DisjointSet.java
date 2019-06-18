@@ -1,3 +1,4 @@
+    
 class DisjointSet{
 	// static class Node{
 	// 	int key;
@@ -37,6 +38,12 @@ class DisjointSet{
 		if(root(a)==root(b))
 			return true;
 		return false;
+	}
+	
+	public boolean findSize(int element)
+	{
+	    int parent = find(element);
+	    return size[parent];
 	}
 	
 }
